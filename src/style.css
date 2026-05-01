@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@theme {
+    --background: #0d1a29;
+    --surface: #232a33;
+    --primary: #60a5fa;
+    --btn: #232a33;
+    --accent: #0c803f;
+    --bgQuorix: #232a33;
+    --yellow-soft: #fde68a;
+    --error: #f87171;
+    --success: #4ade80;
+    --text-main: #d4d8dc;
+    --square: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0v20M0 10h20' stroke='%23232a33' stroke-width='0.5'/%3E%3C/svg%3E");
+}
+
+@font-face {
+  font-family: 'michroma';
+  src: url('/font/Micrhoma/michroma.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'orbitron';
+  src: url('/font/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'orbitronBlack';
+  src: url('/font/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'orbitronRegular';
+  src: url('/font/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.michroma {
+  font-family: 'michroma', sans-serif;
+}
+
+.orbitron {
+  font-family: 'orbitron', sans-serif;
+}
+
+.orbitronBlack {
+  font-family: 'orbitronBlack', sans-serif;
+}
+
+.orbitronRegular {
+  font-family: 'orbitronRegular', sans-serif;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: 700;
+} */
+
+.mtitle {
+  color: var(--surface);
+}
+
+.bg-accent {
+  background-color: var(--surface);
+}
+
+/* button {
+    background-color: var(--accent);
+    border-radius: 16px;
+} */
+
+/* p {
+    color: var(--text-main);
+} */
+
+/* a {
+  color: var(--text-main);
+  transition: color 0.2s;
+} */
+a:hover {
+  color: var(--accent);
+}
+
+.bg-square {
+    background-image: var(--square);
+    background-color: var(--background);
+    color: var(--text-main);
+}
+
+.bg-surface {
+    background-color: var(--surface);
+    opacity: 95%;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #000 25%, #0c803f 100%);
+}
+
+.bg-gradient-surface {
+  background: linear-gradient(135deg, #fff 25%, #232a33 100%);
+}
+
+.original-bg {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  /* Dégradé diagonal */
+  background: linear-gradient(135deg, #000 88%, #0c803f 100%);
+  /* Ajuste le pourcentage pour doser la couleur */
+}
+
+.original-bg-surface {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  /* Dégradé diagonal */
+  background: linear-gradient(135deg, #fff 25%, #232a33 100%);
+  /* Ajuste le pourcentage pour doser la couleur */
+}
+
+/* Pastilles floues/fondues (blobs) */
+.original-bg::before,
+.original-bg::after,
+.original-bg .bg-dot1,
+.original-bg .bg-dot2,
+.original-bg .bg-dot3 {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main “blobs” */
+.original-bg::before {
+  width: 160px; height: 160px;
+  left: -40px; top: 40px;
+  background: radial-gradient(circle, #0c803f 60%, transparent 100%);
+  filter: blur(10px);
+}
+.original-bg::after {
+  width: 120px; height: 120px;
+  right: 30px; bottom: 80px;
+  background: radial-gradient(circle, #fff 15%, #0c803f 40%, transparent 100%);
+  opacity: 0.12;
+  filter: blur(12px);
+}
+
+/* Petites pastilles (plusieurs variantes possibles) */
+.original-bg .bg-dot1 {
+  width: 80px; height: 80px;
+  left: 15%; top: 60px;
+  background: radial-gradient(circle, #fff 30%, #0c803f 60%, transparent 100%);
+  opacity: 0.16;
+  filter: blur(8px);
+}
+.original-bg .bg-dot2 {
+  width: 500px; height: 500px;
+  left: 65%; top: 24px;
+  background: radial-gradient(circle, #0c803f 70%, #fff 90%, transparent 100%);
+  opacity: 0.20;
+  filter: blur(10px);
+}
+.original-bg .bg-dot3 {
+  width: 50px; height: 50px;
+  right: 10%; bottom: 50px;
+  background: radial-gradient(circle, #fff 50%, #0c803f 90%, transparent 100%);
+  opacity: 0.10;
+  filter: blur(7px);
+}
+
+
+.slide-mail-enter-active, .slide-mail-leave-active {
+  transition: all 1.5s cubic-bezier(.4,0,.2,1);
+}
