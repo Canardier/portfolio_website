@@ -16,12 +16,14 @@ const duckLogo = ref('/duck.svg')
 watch(
   () => route.path,
   (path) => {
+    if (path === '/') {
       headerTextColor.value = '#fff'     // blanc
       headerBorderColor.value = '#0c803f'   // vert
       headerQuorixColor.value = '#000'          //noir
       headerQuorixBg.value = '#fff'          //blanc
       duckLogo.value = '/svg/duck.svg'
       quorixLogo.value = '/svg/logoBlack.svg'
+    }
   },
   { immediate: true }
 )
