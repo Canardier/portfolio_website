@@ -11,11 +11,11 @@ defineProps<{
   borderColor: string
 }>()
 
-const navigation = [
-  { name: 'Expertise',   href: '/#expertise' },
-  { name: 'Qui suis-je', href: '/#about' },
-  { name: 'Quorix',      href: '#quorix' },
-  { name: 'Contact',     href: '/#contact' },
+const navigation: { name: string; href: string; external?: boolean }[] = [
+  { name: 'Expertise',   href: '/jstuder#expertise' },
+  { name: 'Qui suis-je', href: '/jstuder#about' },
+  { name: 'Quorix',      href: 'https://quorix.tv', external: true },
+  { name: 'Contact',     href: '/jstuder#contact' },
 ]
 </script>
 
