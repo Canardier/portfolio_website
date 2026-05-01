@@ -131,10 +131,10 @@ const competences = [
     </section>
 
     <!-- ══ COMPÉTENCES ══════════════════════════════════ -->
-    <section class="px-5 md:px-16 py-24 max-w-6xl mx-auto">
+    <section class="px-5 md:px-16 py-24 max-w-6xl mx-auto" id="expertise">
 
       <div class="mb-14 reveal">
-        <p class="font-mono text-[11px] text-[#0c803f] tracking-[0.2em] uppercase mb-3" id="expertise">Expertise</p>
+        <p class="font-mono text-[11px] text-[#0c803f] tracking-[0.2em] uppercase mb-3">Expertise</p>
         <h2 class="orbitron font-black uppercase text-2xl md:text-3xl leading-tight">
           Ce que je fais
         </h2>
