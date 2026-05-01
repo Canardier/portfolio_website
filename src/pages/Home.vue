@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
-import { useHeaderLogic } from '../components/headerScript.ts'
+import { onMounted } from 'vue'
+// import { useHeaderLogic } from '../components/headerScript.ts'
 
-const { scrolled } = useHeaderLogic()
+// const { scrolled } = useHeaderLogic()
 
 const openCalendly = () => {
   if (window.Calendly) {
