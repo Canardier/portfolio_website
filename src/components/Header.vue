@@ -14,7 +14,7 @@ defineProps<{
 const navigation = [
   { name: 'Expertise',   href: '/#expertise' },
   { name: 'Qui suis-je', href: '/#about' },
-  { name: 'Quorix',      href: 'https://quorix.tv', external: true },
+  { name: 'Quorix',      href: '#quorix' },
   { name: 'Contact',     href: '/#contact' },
 ]
 </script>
