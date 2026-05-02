@@ -14,7 +14,7 @@ defineProps<{
 const navigation: { name: string; href: string; external?: boolean }[] = [
   { name: 'Expertise',   href: '/#expertise' },
   { name: 'Qui suis-je', href: '/#about' },
-  { name: 'Quorix',      href: 'https://quorix.tv', external: true },
+  { name: 'Quorix',      href: '/#quorix' },
   { name: 'Contact',     href: '/#contact' },
 ]
 </script>
@@ -74,7 +74,7 @@ const navigation: { name: string; href: string; external?: boolean }[] = [
                   : 'hover:underline hover:underline-offset-8 hover:decoration-4',
                 'px-3 py-2 text-sm lg:text-xl font-medium transition'
               ),
-              item.external ? '!text-[var(--accent)] font-bold' : ''
+              item.name === 'Quorix' ? '!text-[var(--accent)] font-bold' : ''
             ]"
             :style="item.external ? {} : { color: 'var(--header-text)' }">
             {{ item.name }}
