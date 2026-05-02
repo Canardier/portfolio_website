@@ -208,7 +208,7 @@ const competences = [
 <section id="quorix" class="px-5 md:px-16 py-20 border-t border-white/5">
   <div class="max-w-6xl mx-auto reveal">
 
-    <a target="_blank" id="quorix"
+    <a target="_blank" id="quorix" href="https://quorix.tv"
       class="group block border border-[#0c803f]/20 hover:border-[#0c803f]/60 bg-[#0c803f]/5 hover:bg-[#0c803f]/10 p-8 md:p-12 transition-all duration-300 hover:-translate-y-1">
 
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
