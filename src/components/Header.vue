@@ -12,10 +12,10 @@ defineProps<{
 }>()
 
 const navigation: { name: string; href: string; external?: boolean }[] = [
-  { name: 'Expertise',   href: '/jstuder#expertise' },
-  { name: 'Qui suis-je', href: '/jstuder#about' },
+  { name: 'Expertise',   href: '/#expertise' },
+  { name: 'Qui suis-je', href: '/#about' },
   { name: 'Quorix',      href: 'https://quorix.tv', external: true },
-  { name: 'Contact',     href: '/jstuder#contact' },
+  { name: 'Contact',     href: '/#contact' },
 ]
 </script>
 
